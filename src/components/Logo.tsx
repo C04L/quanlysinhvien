@@ -13,7 +13,7 @@ export default function Logo({projectName, githubLink}: {projectName: string, gi
         <div className="text-foreground flex text-nowrap flex-nowrap items-baseline">
             <div className={vt323.className}>
                 <Button variant="link" size="sm">
-                    <Link href={githubLink}><h1 className="text-2xl font-extrabold" id="left-side">TheC04l</h1></Link>
+                    <Link href={"../"}><h1 className="text-2xl font-extrabold" id="left-side">UTC</h1></Link>
                 </Button>
             </div>
             <div className={novaMono.className}>
@@ -21,7 +21,7 @@ export default function Logo({projectName, githubLink}: {projectName: string, gi
             </div>
             <div className={courierPrime.className}>
                 <Button variant="link" size="sm">
-                    <Link href="#"><h1 className="text-lg font-light hidden md:block" id="left-side">{projectName}</h1></Link>
+                    <Link href={githubLink}><h1 className="text-lg font-light hidden md:block" id="left-side">{projectName}</h1></Link>
                 </Button>
             </div>
         </div>

@@ -8,7 +8,7 @@ export default function navbar() {
 
     return (
         <div>
-            <div className="w-screen bg-background
+            <div className="max-w-screen bg-background
              h-16 flex items-center sticky top-0
              outline outline-1 outline-border">
 
