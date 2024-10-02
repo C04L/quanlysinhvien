@@ -45,13 +45,13 @@ export default function hocSinh() {
                 </Avatar>
                 <div className={"my-auto w-full"}>
                     <div id={"information"}>
-                        <div className={"flex gap-x-2 items-baseline"}>
-                            <h1 className={"text-3xl font-bold"}>Luu Viet Dung</h1>
+                        <div className={"flex gap-x-1 lg:gap-x-2 items-baseline"}>
+                            <h1 className={"text-lg lg:text-3xl font-bold"}>Luu Viet Dung</h1>
                             <Button variant={"ghost"} className={"items-baseline w-max h-max p-1 text-gray-400"}>
                                 <Link href={"./hocsinh/suathongtin"}><PenLine size={20}/></Link>
                             </Button>
                         </div>
-                        <p className={"text-sm"}>232630978 - CNTTVA2</p>
+                        <p className={"hidden lg:block text-sm"}>232630978 - CNTTVA2</p>
                     </div>
                 </div>
                 <div className={"w-full flex justify-end"}>

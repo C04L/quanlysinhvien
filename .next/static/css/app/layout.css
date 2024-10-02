@@ -1865,6 +1865,10 @@ video {
     column-gap: 4rem;
   }
 
+  .lg\:gap-x-2 {
+    column-gap: 0.5rem;
+  }
+
   .lg\:pt-0 {
     padding-top: 0px;
   }
@@ -1875,6 +1879,11 @@ video {
 
   .lg\:text-start {
     text-align: start;
+  }
+
+  .lg\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
