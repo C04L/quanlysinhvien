@@ -22,6 +22,7 @@ export default function Home() {
                           </h1>
                           <p className={rokkit.className + " text-gray-400 text-xl font-normal mt-2 lg:mt-0"}>
                               Ứng dụng quản lý sinh viên và điểm sinh viên dùng trong nội bộ trường Đại Học Giao Thông Vận Tải.<br/>
+                              Demo: hocsinh@lms.utc.edu.vn, giangvien@lms.utc.edu.vn. pass: 123456
                           </p>
                           <Dialog>
                               <DialogTrigger asChild>
