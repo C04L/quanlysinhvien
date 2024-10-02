@@ -38,7 +38,7 @@ const thongbao = [
 
 export default function hocSinh() {
     return (
-        <div className={"flex-col gap-y-4 mx-20 mt-9 md:mx-52 md:flex-row"}>
+        <div className={"flex-col gap-y-4 mx-20 mt-9 lg:mx-52 lg:flex-row"}>
             <div className={"flex gap-x-9 w-full mb-10"}>
                 <Avatar className={"h-24 w-24 my-auto"}>
                     <AvatarImage src="https://github.com/shadcn.png" />
@@ -47,7 +47,7 @@ export default function hocSinh() {
                     <div id={"information"}>
                         <div className={"flex gap-x-2 items-baseline"}>
                             <h1 className={"text-3xl font-bold"}>Luu Viet Dung</h1>
-                            <Button variant={"link"} className={"items-baseline w-max h-max p-0 text-gray-400"}>
+                            <Button variant={"ghost"} className={"items-baseline w-max h-max p-1 text-gray-400"}>
                                 <Link href={"./hocsinh/suathongtin"}><PenLine size={20}/></Link>
                             </Button>
                         </div>
