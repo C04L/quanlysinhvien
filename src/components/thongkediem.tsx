@@ -25,10 +25,6 @@ const chartData = [
     { ky: "II", diem: 8.0 },
     { ky: "III", diem: 7.2 },
     { ky: "IV", diem: 10 },
-    { ky: "V", diem: 0 },
-    { ky: "IV", diem: 0 },
-    { ky: "VII", diem: 0 },
-    { ky: "VIII", diem: 0 },
 ]
 
 const chartConfig = {
@@ -44,7 +40,7 @@ export function BangThongKe() {
             <CardHeader>
                 <CardTitle>Thống kê học tập</CardTitle>
                 <CardDescription>
-                    Thống kê quá trình học tập thông qua 8 kỳ học
+                    Theo dõi quá trình học tập của các kỳ học gần nhất
                 </CardDescription>
             </CardHeader>
             <CardContent>
@@ -61,12 +57,12 @@ export function BangThongKe() {
                         <XAxis
                             dataKey="ky"
                             tickLine={false}
-                            axisLine={false}
+                            axisLine={true}
                             tickMargin={8}
                             tickFormatter={(value) => value.slice(0, 3)}
                         />
                         <ChartTooltip
-                            cursor={false}
+                            cursor={true}
                             content={<ChartTooltipContent indicator="dot" hideLabel />}
                         />
                         <Area
