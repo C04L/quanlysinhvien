@@ -8,6 +8,166 @@ import {BellRing, PenLine} from "lucide-react";
 import Link from "next/link";
 import {BangThongKe} from "@/components/thongkediem";
 import {DTBCard, DRLCard, CanhCaoCard, HocLaiCard} from "@/components/thongkeCard"
+import {default as BangDiem} from "@/components/BangDiem"
+import {Roboto} from "next/dist/compiled/@next/font/dist/google";
+
+const diemtongket = [
+    { ky: "I", diem: 9.5 },
+    { ky: "II", diem: 8.0 },
+    { ky: "III", diem: 7.2 },
+    { ky: "IV", diem: 10 },
+]
+
+type diem = {
+    MaHP: string,
+    TenHP: string,
+    SoTinChi: number,
+    LanHoc: number,
+    LanThi: number,
+    Diem10: number,
+    Diem4: number,
+    DiemChu: string,
+    TinhTrang: string,
+    ChiTiet: {
+        DiemThi: number,
+        DQT: number,
+        LanHoc: number,
+    }
+}
+
+const DiemChiTiet:diem[] = [
+    {
+        MaHP:"BS0.101.3",
+        TenHP: "Đại số tuyến tính",
+        Diem10: 9.5,
+        Diem4: 5.7,
+        LanHoc: 1,
+        LanThi: 1,
+        SoTinChi: 3,
+        DiemChu: "A+",
+        TinhTrang: "Dat",
+        ChiTiet: {
+            DiemThi: 3.7,
+            DQT: 7.6,
+            LanHoc: 1,
+        }
+    },
+    {
+        MaHP:"IT1.150.2",
+        TenHP: "Đại số tuyến tính",
+        Diem10: 9.5,
+        Diem4: 5.7,
+        LanHoc: 1,
+        LanThi: 1,
+        SoTinChi: 3,
+        DiemChu: "A+",
+        TinhTrang: "Dat",
+        ChiTiet: {
+            DiemThi: 3.7,
+            DQT: 7.6,
+            LanHoc: 1,
+        }
+    },
+    {
+        MaHP:"DE0.001.3",
+        TenHP: "Đại số tuyến tính",
+        Diem10: 9.5,
+        Diem4: 5.7,
+        LanHoc: 1,
+        LanThi: 1,
+        SoTinChi: 3,
+        DiemChu: "A+",
+        TinhTrang: "Dat",
+        ChiTiet: {
+            DiemThi: 3.7,
+            DQT: 7.6,
+            LanHoc: 1,
+        }
+    },
+    {
+        MaHP:"DE0.002.2",
+        TenHP: "Đại số tuyến tính",
+        Diem10: 9.5,
+        Diem4: 5.7,
+        LanHoc: 1,
+        LanThi: 1,
+        SoTinChi: 3,
+        DiemChu: "A+",
+        TinhTrang: "Dat",
+        ChiTiet: {
+            DiemThi: 3.7,
+            DQT: 7.6,
+            LanHoc: 1,
+        }
+    },
+    {
+        MaHP:"DE0.003.1",
+        TenHP: "Đại số tuyến tính",
+        Diem10: 9.5,
+        Diem4: 5.7,
+        LanHoc: 1,
+        LanThi: 1,
+        SoTinChi: 3,
+        DiemChu: "A+",
+        TinhTrang: "Dat",
+        ChiTiet: {
+            DiemThi: 3.7,
+            DQT: 7.6,
+            LanHoc: 1,
+        }
+    },
+    {
+        MaHP:"DE0.004.2",
+        TenHP: "Đại số tuyến tính",
+        Diem10: 9.5,
+        Diem4: 5.7,
+        LanHoc: 1,
+        LanThi: 1,
+        SoTinChi: 3,
+        DiemChu: "A+",
+        TinhTrang: "Dat",
+        ChiTiet: {
+            DiemThi: 3.7,
+            DQT: 7.6,
+            LanHoc: 1,
+        }
+    },
+    {
+        MaHP:"PE0.002.1",
+        TenHP: "Giáo dục thể chất F2",
+        Diem10: 9.5,
+        Diem4: 5.7,
+        LanHoc: 1,
+        LanThi: 1,
+        SoTinChi: 3,
+        DiemChu: "A+",
+        TinhTrang: "Dat",
+        ChiTiet: {
+            DiemThi: 3.7,
+            DQT: 7.6,
+            LanHoc: 1,
+        }
+    },
+    {
+        MaHP:"IT1.103.3",
+        TenHP: "Kỹ thuật lập trình",
+        Diem10: 9.5,
+        Diem4: 5.7,
+        LanHoc: 1,
+        LanThi: 1,
+        SoTinChi: 3,
+        DiemChu: "A+",
+        TinhTrang: "Dat",
+        ChiTiet: {
+            DiemThi: 3.7,
+            DQT: 7.6,
+            LanHoc: 1,
+        }
+    },
+
+
+
+]
 
 const thongbao = [
     {
@@ -39,7 +199,7 @@ const thongbao = [
 
 export default function hocSinh() {
     return (
-        <div className={"flex-col gap-y-4 px-4 pt-9 md:px-32 lg:flex-row bg-zinc-100 dark:bg-zinc-950"}>
+        <div className={"flex-col gap-y-4 px-4 pt-9 md:px-32 lg:flex-row bg-white dark:bg-[#0e1217] pb-32"}>
             <div className={"flex gap-x-9 w-full mb-10"}>
                 <Avatar className={"h-24 w-24 my-auto ring-2 ring-blue-500 ring-offset-background ring-offset-2"}>
                     <AvatarImage src="https://github.com/shadcn.png" />
@@ -52,7 +212,7 @@ export default function hocSinh() {
                                 <Link href={"./hocsinh/suathongtin"}><PenLine size={20}/></Link>
                             </Button>
                         </div>
-                        <p className={"hidden lg:block text-sm"}>232630978 - CNTTVA2</p>
+                        <p className={"hidden lg:block text-sm" + Roboto}>232630978 - CNTTVA2</p>
                     </div>
                 </div>
                 <div className={"w-full flex justify-end"}>
@@ -62,7 +222,7 @@ export default function hocSinh() {
                                 <BellRing size={20}/>
                             </Button>
                         </PopoverTrigger>
-                        <PopoverContent>
+                        <PopoverContent className={"rounded-2xl"}>
                             <ScrollArea className={"h-[300px]"}>
                                 <div className={"p-2"}>
                                     {thongbao.map(item => (
@@ -87,8 +247,11 @@ export default function hocSinh() {
                 <CanhCaoCard/>
                 <HocLaiCard/>
             </div>
-            <BangThongKe/>
+            <BangThongKe data={diemtongket}/>
             {/*end thong ke*/}
+            <div className={"my-4 rounded-xl w-full"}>
+                <BangDiem data={DiemChiTiet}/>
+            </div>
         </div>
     )
 }

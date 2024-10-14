@@ -54,8 +54,8 @@ export function HocLaiCard() {
         <div className={"w-full md:w-1/4"}>
             <Card className={"h-full"}>
                 <CardHeader>
-                    <CardTitle className={"hidden sm:block font-light"}>Số tín chỉ nợ</CardTitle>
-                    <CardTitle className={"block sm:hidden"}>Số TC nợ</CardTitle>
+                    <CardTitle className={"hidden sm:block font-bold"}>Số tín chỉ tích lũy</CardTitle>
+                    <CardTitle className={"block sm:hidden"}>Số tín chỉ tích lũy</CardTitle>
                 </CardHeader>
                 <CardContent>
                     <CardDescription className={"font-bold text-xl lg:text-3xl flex gap-x-4 items-center"}>

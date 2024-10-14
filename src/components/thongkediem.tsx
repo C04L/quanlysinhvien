@@ -20,21 +20,14 @@ import {
 
 export const description = "A linear area chart"
 
-const chartData = [
-    { ky: "I", diem: 9.5 },
-    { ky: "II", diem: 8.0 },
-    { ky: "III", diem: 7.2 },
-    { ky: "IV", diem: 10 },
-]
-
 const chartConfig = {
     diem: {
         label: "Điểm TB:",
-        color: "hsl(var(--chart-1))",
+        color: "hsl(220 70% 50%)",
     },
 } satisfies ChartConfig
 
-export function BangThongKe() {
+export function BangThongKe({data} : {data:object[]}) {
     return (
         <Card>
             <CardHeader>
@@ -47,7 +40,7 @@ export function BangThongKe() {
                 <ChartContainer config={chartConfig} className={"h-96 w-full"}>
                     <AreaChart
                         accessibilityLayer
-                        data={chartData}
+                        data={data}
                         margin={{
                             left: 12,
                             right: 12,
