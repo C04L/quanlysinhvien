@@ -1,5 +1,3 @@
 {
-  "/hocsinh/page": "app/hocsinh/page.js",
-  "/hocsinh/suathongtin/page": "app/hocsinh/suathongtin/page.js",
   "/authentication/page": "app/authentication/page.js"
 }
