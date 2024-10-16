@@ -1,21 +1,28 @@
 {
   "pages": {
-    "/page": [
+    "/authentication/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+      "static/css/app/authentication/page.css",
+      "static/chunks/app/authentication/page.js"
     ],
-    "/layout": [
+    "/authentication/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/css/app/authentication/layout.css",
+      "static/chunks/app/authentication/layout.js"
     ],
     "/hocsinh/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/hocsinh/page.css",
       "static/chunks/app/hocsinh/page.js"
+    ],
+    "/hocsinh/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/hocsinh/layout.css",
+      "static/chunks/app/hocsinh/layout.js"
     ],
     "/hocsinh/suathongtin/page": [
       "static/chunks/webpack.js",

@@ -9,7 +9,9 @@ import Link from "next/link";
 import {BangThongKe} from "@/components/thongkediem";
 import {DTBCard, DRLCard, CanhCaoCard, HocLaiCard} from "@/components/thongkeCard"
 import {default as BangDiem} from "@/components/BangDiem"
-import {Roboto} from "next/dist/compiled/@next/font/dist/google";
+import {Roboto} from "next/font/google";
+
+const roboto = Roboto({subsets: ["latin"], weight: ["400", "700"]})
 
 const diemtongket = [
     { ky: "I", diem: 9.5 },
@@ -212,7 +214,7 @@ export default function hocSinh() {
                                 <Link href={"./hocsinh/suathongtin"}><PenLine size={20}/></Link>
                             </Button>
                         </div>
-                        <p className={"hidden lg:block text-sm" + Roboto}>232630978 - CNTTVA2</p>
+                        <p className={"hidden lg:block text-sm" + roboto.className}>232630978 - CNTTVA2</p>
                     </div>
                 </div>
                 <div className={"w-full flex justify-end"}>

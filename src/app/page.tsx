@@ -6,6 +6,7 @@ import Image from "next/image";
 import utc from "@/app/public/utc.png"
 import {Josefin_Sans, Rokkitt} from "next/font/google"
 
+
 const josefinSans = Josefin_Sans({subsets: ['latin']})
 const rokkit = Rokkitt({subsets: ['latin']})
 
