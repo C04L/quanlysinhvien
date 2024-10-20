@@ -35,7 +35,6 @@ export default function BangDiem({data}: {data: diem[]}) {
                             <TableHead>Điểm hệ 10</TableHead>
                             <TableHead>Điểm hệ 4</TableHead>
                             <TableHead>Điểm chữ</TableHead>
-                            <TableHead className={"hidden md:table-cell"}>Chi tiết</TableHead>
                         </TableRow>
                     </TableHeader>
                     <TableBody>
@@ -49,13 +48,12 @@ export default function BangDiem({data}: {data: diem[]}) {
                                 <TableCell>{item.Diem10}</TableCell>
                                 <TableCell>{item.Diem4}</TableCell>
                                 <TableCell>{item.DiemChu}</TableCell>
-                                <TableCell className={"hidden md:block"}>Chi tiết</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
                     <TableFooter className={"hidden md:table-footer-group"}>
                         <TableRow>
-                            <TableCell colSpan={8}>Tổng kết hệ 10</TableCell>
+                            <TableCell colSpan={7}>Tổng kết hệ 10</TableCell>
                             <TableCell>9.5</TableCell>
                         </TableRow>
                     </TableFooter>

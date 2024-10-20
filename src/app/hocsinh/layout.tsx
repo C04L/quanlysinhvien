@@ -33,7 +33,7 @@ export default function RootLayout({
                 {children}
               </ThemeProvider>
               <footer>
-                  <div className={"bg-[#00377a] w-full h-fit dark:bg-[#0e0e10] md:grid md:grid-cols-3 gap-y-9 hidden"}>
+                  <div className={"bg-[#00377a] md:w-full h-fit dark:bg-[#0e0e10] md:grid md:grid-cols-3 gap-y-9 hidden"}>
                       <div className={"py-12 mx-13 flex"}>
                           <Image alt={"Logo đại học giao thông vận tải"} src={utc} width={200} height={160}/>
                           <div className={"my-auto text-center"}>

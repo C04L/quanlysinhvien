@@ -1,3 +1,5 @@
 {
-  "/authentication/page": "app/authentication/page.js"
+  "/authentication/page": "app/authentication/page.js",
+  "/giangvien/page": "app/giangvien/page.js",
+  "/hocsinh/page": "app/hocsinh/page.js"
 }

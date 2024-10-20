@@ -201,7 +201,7 @@ const thongbao = [
 
 export default function hocSinh() {
     return (
-        <div className={"flex-col gap-y-4 px-4 pt-9 md:px-32 lg:flex-row bg-white dark:bg-[#0e1217] pb-32"}>
+        <div className={"flex-col gap-y-4 px-4 pt-9 md:px-32 lg:flex-row bg-white dark:bg-[#0e1217] dark:bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] pb-32"}>
             <div className={"flex gap-x-9 w-full mb-10"}>
                 <Avatar className={"h-24 w-24 my-auto ring-2 ring-blue-500 ring-offset-background ring-offset-2"}>
                     <AvatarImage src="https://github.com/shadcn.png" />

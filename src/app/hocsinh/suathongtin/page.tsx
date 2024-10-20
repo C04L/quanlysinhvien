@@ -3,6 +3,7 @@ import {Avatar} from "@/components/ui/avatar";
 import {Plus} from "lucide-react"
 import { Roboto_Slab } from "next/font/google";
 import {Button} from "@/components/ui/button";
+import Link from "next/link"
 
 const robotoslab = Roboto_Slab({subsets: ["latin"]})
 
@@ -54,7 +55,7 @@ export default function page() {
 
                 </div>
             </div>
-            <Button className={"bg-violet-600 my-12 h-12 text-lg"}>Lưu thay đổi</Button>
+            <Button className={"bg-violet-600 my-12 h-12 text-lg"}><Link href={"/hocsinh"}>Lưu thay đổi</Link></Button>
 
 
         </div>

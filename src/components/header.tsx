@@ -8,11 +8,11 @@ export default function navbar() {
 
     return (
         <div>
-            <div className="max-w-screen bg-background
+            <div className="w-full bg-background
              h-16 flex items-center sticky top-0
              outline outline-1 outline-border">
 
-                <div className="w-max box-border mx-4" id="left-side">
+                <div className="w-fit box-border ml-4" id="left-side">
                     <Logo projectName="Bai tap lon" githubLink="https://github.com/C04l"/>
                 </div>
 
