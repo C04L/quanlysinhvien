@@ -7,7 +7,6 @@ export const data: diem[] = [{
     Diem2: 10,
     Diem3: 6,
     DiemThi: 10,
-    TinhTrang: "dat"
 }, {
     Masv: "79045014",
     TenSV: "Ngô Phương",
@@ -15,7 +14,6 @@ export const data: diem[] = [{
     Diem2: 2,
     Diem3: 10,
     DiemThi: 4,
-    TinhTrang: "dat"
 }, {
     Masv: "83566172",
     TenSV: "Huỳnh Phương",
@@ -23,7 +21,6 @@ export const data: diem[] = [{
     Diem2: 1,
     Diem3: 9,
     DiemThi: 7,
-    TinhTrang: "hoclai"
 }, {
     Masv: "85984083",
     TenSV: "Nguyễn Hùng",
@@ -31,7 +28,6 @@ export const data: diem[] = [{
     Diem2: 2,
     Diem3: 1,
     DiemThi: 3,
-    TinhTrang: "dat"
 }, {
     Masv: "74695500",
     TenSV: "Võ Long",
@@ -39,7 +35,6 @@ export const data: diem[] = [{
     Diem2: 4,
     Diem3: 7,
     DiemThi: 6,
-    TinhTrang: "dat"
 }, {
     Masv: "3078781",
     TenSV: "Vũ Minh",
@@ -47,7 +42,6 @@ export const data: diem[] = [{
     Diem2: 6,
     Diem3: 1,
     DiemThi: 10,
-    TinhTrang: "hoclai"
 }, {
     Masv: "40905440",
     TenSV: "Bùi Phương",
@@ -55,7 +49,6 @@ export const data: diem[] = [{
     Diem2: 10,
     Diem3: 4,
     DiemThi: 1,
-    TinhTrang: "dat"
 }, {
     Masv: "68592045",
     TenSV: "Bùi Long",
@@ -63,7 +56,6 @@ export const data: diem[] = [{
     Diem2: 3,
     Diem3: 1,
     DiemThi: 6,
-    TinhTrang: "hoclai"
 }, {
     Masv: "5377865",
     TenSV: "Võ Long",
@@ -71,7 +63,6 @@ export const data: diem[] = [{
     Diem2: 8,
     Diem3: 9,
     DiemThi: 5,
-    TinhTrang: "dat"
 }, {
     Masv: "32417123",
     TenSV: "Phạm Anh",
@@ -79,5 +70,4 @@ export const data: diem[] = [{
     Diem2: 4,
     Diem3: 7,
     DiemThi: 8,
-    TinhTrang: "hoclai"
 }]

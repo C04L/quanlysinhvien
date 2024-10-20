@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"] });
 const robotoslab = Roboto_Slab({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Đại học giao thông vận tải",
+title: "Trang quản lý điểm cho giáo viên",
   description: "Quản lý đào tạo đại học giao thông",
 };
 

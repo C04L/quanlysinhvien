@@ -1,16 +1,10 @@
 {
   "pages": {
-    "/authentication/page": [
+    "/giangvien/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/authentication/page.css",
-      "static/chunks/app/authentication/page.js"
-    ],
-    "/authentication/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/authentication/layout.css",
-      "static/chunks/app/authentication/layout.js"
+      "static/css/app/giangvien/layout.css",
+      "static/chunks/app/giangvien/layout.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
@@ -18,34 +12,11 @@
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/hocsinh/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/hocsinh/page.css",
-      "static/chunks/app/hocsinh/page.js"
-    ],
-    "/hocsinh/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/hocsinh/layout.css",
-      "static/chunks/app/hocsinh/layout.js"
-    ],
     "/giangvien/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/giangvien/page.css",
       "static/chunks/app/giangvien/page.js"
-    ],
-    "/giangvien/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/giangvien/layout.css",
-      "static/chunks/app/giangvien/layout.js"
-    ],
-    "/giangvien/themsinhvien/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/giangvien/themsinhvien/page.js"
     ]
   }
 }

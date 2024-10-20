@@ -12,6 +12,8 @@ import {useState} from "react";
 const formSchema = z.object({
     username: z.string().min(1, {
         message: "Vui lòng nhập tên đăng nhập"
+    }).email({
+        message: "Vui điền đúng định dạng Email"
     }),
     password: z.string().min(1, {
         message: "Vui lòng nhập mật khẩu"
