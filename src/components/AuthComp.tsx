@@ -24,7 +24,7 @@ export function AuthCompLight() {
                 <div className={"self-end p-3"}>
                     <ModeToggle/>
                 </div>
-                <div className={"my-auto self-center"}>
+                <div className={"my-auto self-center w-4/6 md:w-auto"}>
                     <LoginForm/>
                 </div>
 
@@ -50,7 +50,7 @@ export function AuthCompDark() {
                 <div className={"self-end p-3"}>
                     <ModeToggle/>
                 </div>
-                <div className={"my-auto self-center"}>
+                <div className={"my-auto self-center w-4/6 md:w-auto"}>
                     <LoginForm/>
                 </div>
 
