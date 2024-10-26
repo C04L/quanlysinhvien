@@ -1,6 +1,6 @@
 "use client"
 
-import { TrendingUp } from "lucide-react"
+import {TrendingDown, TrendingUp} from "lucide-react"
 import { Area, AreaChart, CartesianGrid, XAxis } from "recharts"
 
 import {
@@ -17,8 +17,6 @@ import {
     ChartTooltip,
     ChartTooltipContent,
 } from "@/components/ui/chart"
-
-export const description = "A linear area chart"
 
 const chartConfig = {
     diem: {
@@ -72,7 +70,7 @@ export function BangThongKe({data} : {data:object[]}) {
                 <div className="flex w-full items-start gap-2 text-sm">
                     <div className="grid gap-2">
                         <div className="flex items-center gap-2 font-medium leading-none">
-                            Kỳ này bạn có tiến bộ đấy! <TrendingUp className="h-4 w-4" />
+                            Kỳ này bạn hơi đi xuống nhé! <TrendingDown className="h-4 w-4" />
                         </div>
                         <div className="flex items-center gap-2 leading-none text-muted-foreground">
                             Cập nhập: ** - ** - 2024

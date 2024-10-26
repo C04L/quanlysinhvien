@@ -10,14 +10,15 @@ import {BangThongKe} from "@/components/thongkediem";
 import {DTBCard, DRLCard, CanhCaoCard, HocLaiCard} from "@/components/thongkeCard"
 import {default as BangDiem} from "@/components/BangDiem"
 import {Roboto} from "next/font/google";
+import {ThongBao} from "@/app/hocsinh/ThongBao";
 
 const roboto = Roboto({subsets: ["latin"], weight: ["400", "700"]})
 
 const diemtongket = [
     { ky: "I", diem: 9.5 },
     { ky: "II", diem: 8.0 },
-    { ky: "III", diem: 7.2 },
-    { ky: "IV", diem: 10 },
+    { ky: "III", diem: 8.37 },
+    { ky: "IV", diem: 8.12 },
 ]
 
 type diem = {
@@ -171,33 +172,6 @@ const DiemChiTiet:diem[] = [
 
 ]
 
-const thongbao = [
-    {
-        id: 1,
-        title: "Đã cập nhập điểm kỳ 1",
-        content: "Nhà trường đã cập nhập điểm kỳ 1, sinh viên hiện tại đã có thể kiểm tra ngay trên web."
-    },
-    {
-        id: 2,
-        title: "Đã cập nhập điểm kỳ 2",
-        content: "Nhà trường đã cập nhập điểm kỳ 2, sinh viên hiện tại đã có thể kiểm tra ngay trên web."
-    },
-    {
-        id: 3,
-        title: "Đã cập nhập điểm kỳ 3",
-        content: "Nhà trường đã cập nhập điểm kỳ 3, sinh viên hiện tại đã có thể kiểm tra ngay trên web."
-    },
-    {
-        id: 4,
-        title: "Đã cập nhập điểm kỳ 3",
-        content: "Nhà trường đã cập nhập điểm kỳ 3, sinh viên hiện tại đã có thể kiểm tra ngay trên web."
-    },
-    {
-        id: 5,
-        title: "Đã cập nhập điểm kỳ 3",
-        content: "Nhà trường đã cập nhập điểm kỳ 3, sinh viên hiện tại đã có thể kiểm tra ngay trên web."
-    }
-]
 
 export default function hocSinh() {
     return (
@@ -227,7 +201,7 @@ export default function hocSinh() {
                         <PopoverContent className={"rounded-2xl"}>
                             <ScrollArea className={"h-[300px]"}>
                                 <div className={"p-2"}>
-                                    {thongbao.map(item => (
+                                    {ThongBao.map(item => (
                                         <div key={item.id}>
                                             <div className={"dark:hover:bg-zinc-900 hover:bg-zinc-100 rounded-md p-2 mx-1"}>
                                                 <h3 className={"text-md font-bold mb-2"}>{item.title}</h3>
@@ -238,6 +212,7 @@ export default function hocSinh() {
                                     ))}
                                 </div>
                             </ScrollArea>
+                            <Button variant={"link"} className={"text-zinc-400 font-bold w-full"}><Link href={"/hocsinh/thongbao"}>Xem tất cả</Link></Button>
                         </PopoverContent>
                     </Popover>
                 </div>
