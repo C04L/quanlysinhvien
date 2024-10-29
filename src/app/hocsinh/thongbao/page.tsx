@@ -1,7 +1,5 @@
-import {Separator} from "@/components/ui/separator"
 import {ThongBao} from "@/app/hocsinh/ThongBao";
 import Image from "next/image"
-import {Button} from "@/components/ui/button";
 
 export default function BangTin() {
     return (
@@ -9,7 +7,7 @@ export default function BangTin() {
             <div className={"lg:mx-28 lg:py-20"}>
                 <div
                     className={"lg:grid lg:grid-cols-10 lg:gap-x-5 min-h-[100vh] lg:rounded-2xl p-8 flex flex-col"}>
-                    <article className={"col-span-8"}>
+                    <article className={"col-span-8 mb-8 pb-8 border-b-2 lg:border-0 lg:mb-0 lg:pb-0 md:mr-10"}>
                         <h1 className={"lg:text-5xl md:text-3xl text-2xl font-bold leading-[1.5em] text-center"}>Triển
                             khai web quản lý điểm sinh viên trường Đại Học Giao Thông Vận Tải</h1>
                         <h3 className={"text-foreground/50 my-3 italic lg:px-6 lg:text-md text-sm"}>Ngày đăng:
@@ -28,6 +26,7 @@ export default function BangTin() {
                     </article>
                     <div className={"lg:col-span-2 lg:col-start-9 max-h-full lg:mt-10"}>
                         <div className={"lg:overflow-auto h-screen"}>
+                            <h1 className={"font-extrabold text-3xl text-right"}>Tin nổi bật</h1>
                             {ThongBao.map(item => {
                                 return (
                                     <div key={item.id} className={"h-fit border-2 rounded-2xl p-2 my-3 hover:bg-foreground/30"}>

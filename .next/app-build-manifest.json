@@ -1,22 +1,5 @@
 {
   "pages": {
-    "/hocsinh/thongbao/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/hocsinh/thongbao/page.js"
-    ],
-    "/hocsinh/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/hocsinh/layout.css",
-      "static/chunks/app/hocsinh/layout.js"
-    ],
-    "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
-    ],
     "/authentication/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -29,6 +12,35 @@
       "static/css/app/authentication/layout.css",
       "static/chunks/app/authentication/layout.js"
     ],
+    "/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/layout.css",
+      "static/chunks/app/layout.js"
+    ],
+    "/hocsinh/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/hocsinh/page.css",
+      "static/chunks/app/hocsinh/page.js"
+    ],
+    "/hocsinh/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/hocsinh/layout.css",
+      "static/chunks/app/hocsinh/layout.js"
+    ],
+    "/hocsinh/suathongtin/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/hocsinh/suathongtin/page.css",
+      "static/chunks/app/hocsinh/suathongtin/page.js"
+    ],
+    "/hocsinh/thongbao/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/hocsinh/thongbao/page.js"
+    ],
     "/giangvien/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
@@ -40,18 +52,6 @@
       "static/chunks/main-app.js",
       "static/css/app/giangvien/layout.css",
       "static/chunks/app/giangvien/layout.js"
-    ],
-    "/hocsinh/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/hocsinh/page.css",
-      "static/chunks/app/hocsinh/page.js"
-    ],
-    "/hocsinh/suathongtin/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/hocsinh/suathongtin/page.css",
-      "static/chunks/app/hocsinh/suathongtin/page.js"
     ]
   }
 }

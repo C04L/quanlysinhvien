@@ -1,7 +1,6 @@
 import {CardHeader,Card,CardContent,CardDescription,CardTitle} from "@/components/ui/card";
 import * as React from "react";
-import Link from "next/link";
-import {} from "lucide-react";
+import {default as FormThemSinhVien} from "@/components/ui/FormThemSinhVien"
 import {Table, TableBody, TableCell, TableCaption, TableFooter, TableHead, TableHeader, TableRow} from "@/components/ui/table"
 import FormCapNhapDiem from "@/components/FormCapNhapDiem";
 
@@ -12,6 +11,9 @@ export function ThemSinhVien() {
                 <CardTitle>Thêm sinh viên</CardTitle>
                 <CardDescription>Thêm sinh viên vào danh sách sinh viên trong lớp</CardDescription>
             </CardHeader>
+            <CardContent>
+                <FormThemSinhVien/>
+            </CardContent>
         </Card>
     )
 }

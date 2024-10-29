@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { Inter, Roboto_Slab  } from "next/font/google";
 import "../globals.css";
 import {ThemeProvider} from "@/components/theme-provider";
-import Header from "@/components/header";
 import utc from "@/app/public/logoutc.png";
 import Image from "next/image";
-import Logo from "@/components/Logo";
 import {ModeToggle} from "@/components/theme-button";
 import {Button} from "@/components/ui/button";
+import {LogOut} from "lucide-react";
+import Link from "next/link";
+import SearchBar from "@/components/SearchBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,8 +34,8 @@ export default function RootLayout({
                   disableTransitionOnChange
               >
                   <div>
-                      <div className="max-w-screen bg-background
-                         h-16 flex items-center sticky top-0
+                      <div className="w-screen bg-background
+                         h-16 flex items-center fixed top-0
                          outline outline-1 outline-border">
 
                           <div className="w-fit box-border mx-4 text-nowrap" id="left-side">
@@ -44,6 +45,8 @@ export default function RootLayout({
                           </div>
 
                           <div className="w-full flex gap-4 justify-end mx-4" id="right-side">
+                              <SearchBar/>
+                              <Button><Link href={"/"}><LogOut/></Link></Button>
                               <ModeToggle/>
                           </div>
                       </div>

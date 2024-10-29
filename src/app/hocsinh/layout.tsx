@@ -29,7 +29,7 @@ export default function RootLayout({
                   enableSystem
                   disableTransitionOnChange
               >
-                  <Header/>
+                  <Header navlink={"../hocsinh/"} tieude={"Trangchu"}/>
                 {children}
               </ThemeProvider>
               <footer>
