@@ -1,7 +1,0 @@
-{
-  "/authentication/page": "app/authentication/page.js",
-  "/hocsinh/page": "app/hocsinh/page.js",
-  "/hocsinh/suathongtin/page": "app/hocsinh/suathongtin/page.js",
-  "/hocsinh/thongbao/page": "app/hocsinh/thongbao/page.js",
-  "/giangvien/page": "app/giangvien/page.js"
-}
