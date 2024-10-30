@@ -1,6 +1,6 @@
 'use client'
 import {Form, FormField, FormLabel, FormMessage, FormItem, FormControl, FormDescription} from "@/components/ui/form"
-import {useForm,} from "react-hook-form";
+import {useForm} from "react-hook-form";
 import {Input} from "@/components/ui/input";
 import {z} from "zod"
 import {zodResolver} from "@hookform/resolvers/zod";
@@ -49,36 +49,20 @@ export default function FormThemSinhVien() {
         }
     })
     function onSubmit(values: z.infer<typeof formSchema>) {
-        alert(`Đã lưu thông tin cho SV ${values.masv}. với họ tên: ${values.hoten}, lớp: ${values.Lop}, khoa: ${values.khoa}`)
+        alert(`Đã gửi thông tin sinh viên ${values.masv}. với họ tên: ${values.hoten}, lớp: ${values.Lop}, khoa: ${values.khoa} cho máy chủ, chờ xử lý...`)
     }
 
     function handleInputhoten(e: React.ChangeEvent<HTMLInputElement>) {
         const value = e.target.value;
-        const isNumber = /^[0-9]*$/.test(value);
-        if (isNumber) {
-            sethoten(value);
-        }
+        sethoten(value);
     }
     function handleInputLop(e: React.ChangeEvent<HTMLInputElement>) {
         const value = e.target.value;
-        const isNumber = /^[0-9]*$/.test(value);
-        if (isNumber) {
-            setLop(value);
-        }
+        setLop(value);
     }
     function handleInputkhoa(e: React.ChangeEvent<HTMLInputElement>) {
         const value = e.target.value;
-        const isNumber = /^[0-9]*$/.test(value);
-        if (isNumber) {
-            setkhoa(value);
-        }
-    }
-    function handleInputDiemThi(e: React.ChangeEvent<HTMLInputElement>) {
-        const value = e.target.value;
-        const isNumber = /^[0-9]*$/.test(value);
-        if (isNumber) {
-            setDiemThi(value);
-        }
+        setkhoa(value)
     }
     function handleInputMaSV(e: React.ChangeEvent<HTMLInputElement>) {
         const value = e.target.value;
