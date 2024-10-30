@@ -59,9 +59,8 @@ export function HocLaiCard() {
                 </CardHeader>
                 <CardContent>
                     <CardDescription className={"font-bold text-xl lg:text-3xl flex gap-x-4 items-center"}>
-                        <p>00</p>
-                        <p className={"text-sm text-green-700 flex md:hidden lg:flex items-center"}>+ 0 <Minus
-                            className={"h-4"}/></p>
+                        <p>26</p>
+                        <p className={"text-sm text-green-700 flex md:hidden lg:flex items-center"}>+ 13</p>
                     </CardDescription>
                 </CardContent>
                 <CardFooter className={"hidden md:block"}>
@@ -83,8 +82,8 @@ export function CanhCaoCard() {
                 </CardHeader>
                 <CardContent>
                     <CardDescription className={"font-bold text-xl lg:text-3xl flex gap-x-4 items-center"}>
-                        <p>26</p>
-                        <p className={"text-sm text-green-700 flex md:hidden lg:flex items-center"}>+ 13 <Minus className={"h-4"}/></p>
+                        <p>0/3</p>
+                        <p className={"text-sm text-green-700 flex md:hidden lg:flex items-center"}><Minus className={"h-4"}/></p>
                     </CardDescription>
                 </CardContent>
                 <CardFooter className={"hidden md:block"}>
