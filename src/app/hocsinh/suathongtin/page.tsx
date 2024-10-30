@@ -11,7 +11,7 @@ const robotoslab = Roboto_Slab({subsets: ["latin"]})
 export default function page() {
     return (
         <div
-            className={"flex-col gap-y-4 px-4 pt-9 md:px-32 bg-white dark:bg-[#0e1217] pb-32 h-screen md:mx-28"}>
+            className={"flex-col gap-y-4 px-4 pt-9 md:px-32 bg-white dark:bg-[#0e1217] pb-32 h-screen md:mx-28 mt-12"}>
             <div className={"flex gap-x-9 w-full mb-10 items-center"}>
                 <Avatar className={"h-40 w-40 my-auto border-4 border-double border-indigo-600"}>
                     <div
