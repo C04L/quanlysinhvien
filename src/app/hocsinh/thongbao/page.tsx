@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function BangTin() {
     return (
         <div className={"dark:bg-[#0e1217] dark:bg-[radial-gradient(ellipse_80%_80%_at_10%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] min-h-screen"}>
-            <div className={"lg:mx-28 lg:py-20"}>
+            <div className={"lg:mx-28 py-20"}>
                 <div
                     className={"lg:grid lg:grid-cols-10 lg:gap-x-5 min-h-[100vh] lg:rounded-2xl p-8 flex flex-col"}>
                     <article className={"col-span-8 mb-8 pb-8 border-b-2 lg:border-0 lg:mb-0 lg:pb-0 md:mr-10"}>
